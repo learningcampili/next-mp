@@ -44,9 +44,9 @@ export async function POST(req: Request) {
         },
       },
       back_urls: {
-        success: `${process.env.NEXT_PUBLIC_URL}/`,
-        failure: `${process.env.NEXT_PUBLIC_URL}/`,
-        pending: `${process.env.NEXT_PUBLIC_URL}/`,
+        success: `${process.env.NEXT_PUBLIC_URL}/success`,
+        failure: `${process.env.NEXT_PUBLIC_URL}/failure`,
+        pending: `${process.env.NEXT_PUBLIC_URL}/pending`,
       },
       auto_return: "approved",
       payment_methods: {
