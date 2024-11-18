@@ -69,6 +69,8 @@ export async function POST(req: Request) {
       throw new Error("Error al crear la preferencia en Mercado Pago");
     }
 
+    console.log("******* se creo la preferencia ********");
+
     return NextResponse.json({
       id: response.id,
       init_point: response.init_point,

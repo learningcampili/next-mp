@@ -66,8 +66,9 @@ export const Product = () => {
         }),
       });
       const data = await response.json();
-
+      console.log("**************************");
       console.log("data en el front", data);
+      console.log("**************************");
 
       const { id } = data;
       return id;
@@ -77,7 +78,7 @@ export const Product = () => {
   };
 
   const handleBuy = async () => {
-    console.log("handleBuy");
+    console.log("****** handleBuy ******");
     const id = await createPreference();
     if (id) setPreferenceId(id);
   };
