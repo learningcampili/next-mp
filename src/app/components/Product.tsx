@@ -6,18 +6,18 @@ import { initMercadoPago, Wallet } from "@mercadopago/sdk-react";
 const items = [
   {
     title: "Yummy Moritas",
-    description: "Yummy Moritas",
+    description: "Descripción de la Yummy Moritas",
     quantity: 1,
     currency_id: "ARS",
     unit_price: 50,
   },
-  {
-    title: "Yummy Banana",
-    description: "Yummy Banana",
-    quantity: 1,
-    currency_id: "ARS",
-    unit_price: 45,
-  },
+  // {
+  //   title: "Yummy Banana",
+  //   description: "Yummy Banana",
+  //   quantity: 1,
+  //   currency_id: "ARS",
+  //   unit_price: 45,
+  // },
 ];
 
 export const Product = () => {
@@ -39,7 +39,7 @@ export const Product = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          items: items,
+          items: items, // debe tomar los items del cartrito
           orderId: "1234567890",
           buyer: {
             name: "John Doe",
